@@ -1,0 +1,50 @@
+Scenario 1: Pass or Fail
+- Pseudocode
+START 
+INPUT student_grade 
+IF student_grade >= 50 THEN 
+PRINT "ناجح" 
+ELSE 
+PRINT "راسب" 
+END IF 
+END
+Scenario 2: Exam Entry Verification.
+Algorithm:
+Start.
+Get the student's seat number.
+Check the registered students list.
+Search for the seat number in the list.
+If the number exists, allow the student to enter.
+Otherwise, deny entry.
+End.
+INPUT Student seat number and Registered students list.
+OUTPUT Entry allowed or Entry denied.
+Possible Cases and Decisions
+Condition and Decision
+If Seat number exists in the list 
+Allow entry
+If Seat number does not exist 
+Deny entry.
+If Seat number is empty or invalid 
+Ask for a valid number.
+Pseudocode:
+START
+
+INPUT seat_number
+
+IF seat_number is valid THEN
+    SEARCH for seat_number in registered_list.
+    IF seat_number is FOUND THEN
+        OUTPUT "Entry Allowed"
+    ELSE
+       OUTPUT "Entry Denied"
+    END IF
+ELSE
+    OUTPUT "Invalid Seat Number"
+END IF
+END
+Test Cases:
+1.If the number 1234 (exists in list)
+  Entry Allowed.
+2.If the number 5678 (not in list)
+  Entry Denied.
